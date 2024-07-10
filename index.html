@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Mega Frotas</title>
+    <style>
+        h1 {
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+        h3 {
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: 100;
+        }
+
+        #divFor {
+            box-shadow: 0px 0px 8px;
+            height: 40%;
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        #formul {
+            padding-top: 5%;
+            padding-bottom: 3%;
+        }
+
+        .campo {
+            padding-bottom: 1%;
+        }
+
+        body {
+            background-image: url('frota.png');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho com título e subtítulo -->
+    <div>
+        <h1 id="titulo">MEGA FROTAS</h1>
+        <p>
+        <h2>Mantenha sua frota abastecida com os melhores do mercado.</h2>
+        </p>
+        <h3>O que a Mega faz por você?
+            Permite gerenciamento de abastecimento de maneira rápida, remota e gratuita.
+            <br>
+            Sistema de pagamento 100% digital e seguro.
+            <br>
+            Manutenção veicular gratuita para clientes fidelizados.</h3>
+        
+    </div>
+
+    <!-- Inicio do formulário -->
+    <div id="divFor">
+
+        <form name="dados" id="formul">
+
+            <!-- Campo com legendas "nome, cnpj, email, telefone"-->
+            <div class="campo">
+                <label for="nome"><strong>Empresa:</strong></label>
+                <input type="text" name="nome">
+            </div>
+
+            <div class="campo">
+                <label for="cnpj"><strong>CNPJ:</strong></label>
+                <input type="text" name="cnpj">
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="text" name="email">
+            </div>
+
+            <div class="campo">
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="text" name="telefone">
+            </div>
+
+            <!-- Campo para escolha dav quantidade de frota (select option)-->
+            <div class="campo">
+                <label for="frota"><strong>Frota:</strong></label>
+                <select name="frota" required>
+                    <option selected disabled value="">Selecione o volume da sua frota</option>
+                    <option>Entre 1 e 10</option>
+                    <option>Entre 11 e 20</option>
+                    <option>Entre 21 e 50</option>
+                    <option>Entre 51 e 100</option>
+                    <option>Entre 500 e 1000</option>
+                    <option>Acima de 1000</option>
+                </select>
+            </div>
+            <br>
+            <!-- Campo de contato escolha de 1 ou mais opções para marcar (checkbox)-->
+            <div class="campo">
+                <label><strong>Selecione a forma que você gostaria de ser contatado:</strong></label><br>
+                <input type="checkbox" id="email" name="email" value="email">
+                <label for="email"> E-mail</label>
+                <input type="checkbox" id="telefone" name="telefone" value="telefone">
+                <label for="telefone"> Telefone </label>
+            </div>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                <br>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <br>
+            <button class="botao" type="submit">Concluído</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
